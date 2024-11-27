@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem;
+        }
+        .item {
+            background-color: rgb(128, 112, 112);
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .grid-item {
+            background-color: rgb(128, 112, 112);
+            padding: 10px;
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .container-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+        .item-a {
+            background-color: rgb(128, 112, 112);
+            padding: 10px;
+            border: 1px solid black;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color:white;
+            padding: 10px;
+            margin-top: 20px; /* Añade margen superior para separar el navbar */
+        }
+        .nav-item {
+            color: white;
+            background-color: royalblue;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-right: 10px; /* Añade margen derecho para separar los elementos del navbar */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <nav class="navbar">
+        <div class="nav-item">inicio</div>
+        <div class="nav-item">nosotros</div>
+        <a href="ocho.html" class="nav-item">Clase ocho</a>
+        <div class="nav-item">servicios</div>
+        <div class="nav-item">blog</div>
+    </nav>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+    </div>
+    
+</body>
+</html>
